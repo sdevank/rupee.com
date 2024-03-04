@@ -1,0 +1,25 @@
+body
+{
+   
+    background-image:url(ind1.webp);
+    height:100vh;
+    background-size:cover;
+    background-attachment:local;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 300px;
+    border-radius: 10px;
+}
+input[type="number"]
+{
+    border-radius: 10px;
+    width: 200px;
+    height: 20px;
+    border: 1px solid;
+    text-align: center;
+    font-weight:500;
+    cursor: pointer;
+}

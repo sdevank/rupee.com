@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+    function convertRupee()
+        {
+        const a=parseFloat(document.getElementById('r').value);
+        const d=a*0.012;
+        document.getElementById('e').value=d.toFixed(3);
+        }
+    function convertDollar()
+    {
+    const c=parseFloat(document.getElementById('e').value);
+    const f=c/0.012;
+    document.getElementById('r').value=f.toFixed(3);
+    }
+    </script>
+</head>
+<body>
+    <div class="cr"><h1>Currency Converter</h1>
+    <div class="convert">
+    <b>Amount in Rupee:</b> <input type="number" id="r" onchange="convertRupee()"><br><br>
+    <b>
+    Amount in Dollar:</b> <input type="number" id="e" onchange="convertDollar()">
+   </div>
+</div>
+</body>
+</html>
